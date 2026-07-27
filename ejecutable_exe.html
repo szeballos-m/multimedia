@@ -5,7 +5,7 @@
 <link rel="stylesheet" type="text/css" href="content.css" />
 <link rel="stylesheet" type="text/css" href="nav.css" />
 <meta http-equiv="content-type" content="text/html;  charset=utf-8" />
-<title>Documentación Profesional | Sistemas Multimediales Cerrados </title>
+<title>Ejecutable (.exe) | Sistemas Multimediales Cerrados </title>
 <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
 <meta name="author" content="A.U.S. Silvia Marcela Zeballos" />
 <link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-sa/4.0/" />
@@ -21,7 +21,7 @@
     line-height: 1.2;
 }
 </style></head>
-<body class="exe-web-site" id="exe-node-16"><script type="text/javascript">document.body.className+=" js"</script>
+<body class="exe-web-site" id="exe-node-60"><script type="text/javascript">document.body.className+=" js"</script>
 <div id="content">
 <p id="skipNav"><a href="#main" class="sr-av">Saltar la navegación</a></p>
 <header id="header" ><div id="headerContent">Sistemas Multimediales Cerrados</div></header>
@@ -107,14 +107,14 @@
          <li><a href="ficha_de_usabilidad.html" class="no-ch">Ficha de Usabilidad</a></li>
       </ul>
       </li>
-      <li><a href="empaquetado_y_distribucin_final.html" class="daddy">Empaquetado y Distribución Final</a>
-      <ul class="other-section">
-         <li><a href="ejecutable_exe.html" class="no-ch">Ejecutable (.exe)</a></li>
+      <li class="current-page-parent"><a href="empaquetado_y_distribucin_final.html" class="current-page-parent daddy">Empaquetado y Distribución Final</a>
+      <ul>
+         <li id="active"><a href="ejecutable_exe.html" class="active no-ch">Ejecutable (.exe)</a></li>
          <li><a href="prctico_iii2.html" class="no-ch">Práctico III.2</a></li>
       </ul>
       </li>
-      <li id="active"><a href="documentacin_profesional.html" class="active daddy">Documentación Profesional</a>
-      <ul>
+      <li><a href="documentacin_profesional.html" class="daddy">Documentación Profesional</a>
+      <ul class="other-section">
          <li><a href="prctico_iii3.html" class="no-ch">Práctico III.3</a></li>
          <li><a href="plantilla_del_manual_tcnico.html" class="no-ch">Plantilla del Manual Técnico</a></li>
       </ul>
@@ -133,62 +133,65 @@
 </nav>
 <div id='topPagination'>
 <nav class="pagination noprt">
-<a href="prctico_iii2.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="prctico_iii3.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+<a href="empaquetado_y_distribucin_final.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="prctico_iii2.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
 </nav>
 </div>
 <div id="main-wrapper">
 <section id="main">
-<header id="nodeDecoration"><h1 id="nodeTitle">Documentación Profesional</h1></header>
-<article class="iDevice_wrapper textIdevice em_iDevice" id="id18">
+<header id="nodeDecoration"><h1 id="nodeTitle">Ejecutable (.exe)</h1></header>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id70">
 <div class="iDevice emphasis1" >
-<header class="iDevice_header iDevice_header_noIcon"><h1 class="iDeviceTitle">Manuales y Especificaciones</h1></header>
+<header class="iDevice_header iDevice_header_noIcon"><h1 class="iDeviceTitle">Convertir todo el proyecto en una aplicación ejecutable (.exe) independiente</h1></header>
 <div class="iDevice_inner">
 <div class="iDevice_content_wrapper">
-<div id="ta18_117_2" class="block iDevice_content">
-<div class="exe-text"><ol>
-<li><span style="font-size: 14pt;"><strong> El Manual de Usuario</strong></span></li>
+<div id="ta70_115_2" class="block iDevice_content">
+<div class="exe-text"><p style="text-align: justify;"><span style="color: #000000;">Esto es muy común cuando entregás un trabajo profesional a un cliente, porque les permite abrir el kiosco como si fuera un programa de PC (un juego o un software de gestión), sin que nadie sepa que atrás hay un servidor o un navegador web.</span></p>
+<p style="text-align: justify;"><span style="color: #000000;">Hay <strong>tres formas principales</strong> de lograrlo, desde la más sencilla hasta la más profesional:</span></p>
+<p style="text-align: justify;"><span style="color: #000000;"><strong>Opción 1: Crear un Acceso Directo Lanzador (La solución más simple)</strong></span></p>
+<p style="text-align: justify;"><span style="color: #000000;">No empaqueta el servidor, pero crea un icono ejecutable que abre Chrome directamente en modo kiosco bloqueado.</span></p>
+<ol style="text-align: justify;">
+<li><span style="color: #000000;">En el escritorio de Windows, hacé clic derecho ➔ <strong>Nuevo </strong><strong>➔</strong><strong> Acceso directo</strong>.</span></li>
+<li><span style="color: #000000;">En la ruta del elemento, pegá esto (ajustando tu carpeta y URL):</span></li>
 </ol>
-<p style="text-align: justify;">Guía visual rápida para el personal que operará el sistema (ej. empleados de un museo). Debe incluir:</p>
-<ul style="text-align: justify;">
-<li>Cómo encender/apagar el sistema.</li>
-<li>Resolución de problemas básicos (¿Qué hacer si no hay sonido?).</li>
-</ul>
-<ol start="2" style="text-align: justify;">
-<li><span style="font-size: 14pt;"><strong> Especificaciones de Hardware y Mantenimiento</strong></span></li>
+<p style="text-align: justify;"><span style="color: #000000;">Plaintext</span></p>
+<p style="text-align: justify;"><span style="color: #000000;">"C:\Program Files\Google\Chrome\Application\chrome.exe" --kiosk "http://localhost/my-app/"</span></p>
+<ol style="text-align: justify;">
+<li><span style="color: #000000;">Ponele de nombre <strong>"Iniciar Kiosco Museo"</strong>.</span></li>
+<li><span style="color: #000000;"><em>(Opcional)</em> Hacé clic derecho en el acceso directo ➔ <strong>Propiedades </strong><strong>➔</strong><strong> Cambiar icono...</strong> y elegí el logo del museo o un icono de pantalla.</span></li>
 </ol>
-<p style="text-align: justify;">Documento técnico para el cliente que detalla:</p>
+<p style="text-align: justify;"><span style="color: #000000;">Al hacer doble clic, abre la aplicación inmediatamente a pantalla completa.</span></p>
+<p style="text-align: justify;"><span style="color: #000000;"><strong>Opción 2: Empaquetar con Nativefier (Convierte la Web en una App de Escritorio)</strong></span></p>
+<p style="text-align: justify;"><span style="color: #000000;"><a href="https://github.com/nativefier/nativefier" style="color: #000000;">Nativefier</a> es una herramienta gratuita que toma cualquier dirección web (incluso tu localhost) y la envuelve dentro de una estructura de <strong>Electron.js</strong>. Genera una carpeta con un archivo .exe propio.</span></p>
+<p style="text-align: justify;"><span style="color: #000000;"><strong>Pasos:</strong></span></p>
+<ol style="text-align: justify;">
+<li><span style="color: #000000;">Necesitás tener instalado <strong>Node.js</strong> en la computadora.</span></li>
+<li><span style="color: #000000;">Abrís la consola de comandos (CMD) y ejecutás:</span></li>
+</ol>
+<p style="text-align: justify;"><span style="color: #000000;">npm install -g nativefier</span></p>
+<ol style="text-align: justify;">
+<li><span style="color: #000000;">Para crear el ejecutable del kiosco, corrés:</span></li>
+</ol>
+<p style="text-align: justify;"><span style="color: #000000;">nativefier --name "KioscoMuseo" "http://localhost/my-app/" --full-screen</span></p>
+<ol style="text-align: justify;">
+<li><span style="color: #000000;">Te va a generar una carpeta con un ejecutable llamado KioscoMuseo.exe. Al abrirlo, se ejecuta como una aplicación nativa de Windows sin barras ni bordes de navegador.</span></li>
+</ol>
+<p style="text-align: justify;"><span style="color: #000000;"><strong>Opción 3: Un servidor portable auto-contenido (La solución Portable Profesional)</strong></span></p>
+<p style="text-align: justify;"><span style="color: #000000;">Si querés llevarte el proyecto en un pendrive o instalarlo en la PC del museo <strong>sin tener que instalar UwAmp ni importar la base de datos a mano</strong>:</span></p>
+<ol style="text-align: justify;">
+<li><span style="color: #000000;">Podés empaquetar toda la carpeta de tu servidor local (UwAmp) junto con un script .bat o un instalador creado con <strong>Inno Setup</strong> o <strong>WinRAR (archivo auto-extraíble)</strong>.</span></li>
+<li><span style="color: #000000;">El script de inicio hace tres cosas en segundo plano al hacer doble clic en el .exe:</span>
+<ul>
+<li><span style="color: #000000;">Arranca Apache y MySQL de forma silenciosa.</span></li>
+<li><span style="color: #000000;">Espera 3 segundos.</span></li>
+<li><span style="color: #000000;">Abre Chrome o la app en modo kiosco apuntando a http://localhost/my-app/.</span></li>
+</ul>
+</li>
+</ol>
+<p style="text-align: justify;"><span style="color: #000000;"><strong>¿Qué es lo ideal?</strong></span></p>
 <ul style="text-align: justify;">
-<li><strong>Requerimientos:</strong> CPU, RAM, Resolución de pantalla.</li>
-<li><strong>Guía de Mantenimiento:</strong> Limpieza de periféricos y actualización de contenidos.</li>
-<li><strong>Escalabilidad:</strong> Instrucciones para que otros desarrolladores puedan actualizar el código en el futuro (comentarios en el código y estructura de variables).</li>
+<li><span style="color: #000000;">La <strong>Opción 1</strong> (Acceso directo con parámetros --kiosk) es excelente porque les enseña a usar comandos del sistema operativo.</span></li>
 </ul>
-<h4 style="text-align: justify;">Documentación:</h4>
-<ul style="text-align: justify;">
-<li><strong>Diagrama de Arquitectura Final:</strong> No solo el mapa de navegación, sino un diagrama que muestre cómo se conectan los archivos (ej. html -&gt; assets/video1.mp4).</li>
-<li><strong>Glosario Técnico para el Cliente:</strong> Explicar términos como "codec", "latencia" o "resolución nativa" para que el cliente sepa qué está comprando.</li>
-</ul>
-<p style="text-align: justify;"><strong>El respaldo legal y técnico del trabajo entregado</strong></p>
-<ul>
-<li style="text-align: justify;"><strong>Manual de Usuario (Nivel Operador):</strong>
-<ul>
-<li>Instrucciones de encendido: "Presione el botón detrás del mueble".</li>
-<li>Guía de limpieza: Qué productos usar para no dañar la pantalla táctil.</li>
-</ul>
-</li>
-<li style="text-align: justify;"><strong>Especificaciones Técnicas (Nivel IT):</strong>
-<ul>
-<li>Listado de hardware mínimo: Procesador, RAM y espacio en disco.</li>
-<li>Rutas de archivos: Dónde se encuentran los videos o la base de datos para reemplazarlos en el futuro.</li>
-</ul>
-</li>
-<li><strong>Guía de Mantenimiento:</strong>
-<ul>
-<li style="text-align: justify;">Periodicidad de reinicio del sistema (ej. una vez por semana).</li>
-<li style="text-align: justify;">Contacto de soporte técnico.</li>
-</ul>
-</li>
-</ul>
-<p> </p></div>
+<p style="text-align: justify;"><span style="color: #000000;">Si querés sumar un <strong>desafío técnico o punto extra</strong>, usar <strong>Nativefier (Opción 2)</strong> para que generar un .exe real con el icono del proyecto es un cierre espectacular para la materia</span></p></div>
 </div>
 </div>
 </div>
@@ -201,7 +204,7 @@
 </div>
 <div id='bottomPagination'>
 <nav class="pagination noprt">
-<a href="prctico_iii2.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="prctico_iii3.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+<a href="empaquetado_y_distribucin_final.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="prctico_iii2.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
 </nav>
 </div>
 <footer id="siteFooter"> ©  2026 - A.U.S. Silvia Marcela Zeballos</footer></div>
